@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aanavandi HomePage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/559/559380.png">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/128/559/559380.png" alt="Aanavandi Logo">
+                <h3>Aanavandi: Online Bus Ticket Booking</h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ticket_booking.html">Ticket Booking</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+            <div class="contact_us">
+                <img src="https://cdn-icons-png.flaticon.com/128/684/684813.png" alt="Contact Us icon">
+                <h3>Contact Us: 9567992310</h3>
+            </div>
+        </nav>
+    </header>
+
+    <section class="form">
+        <br>
+        <h2 style="text-align: center;">Customer Details</h2>
+        <p style="text-align: center;">Kindly fill in customer details</p><br>
+        <div class="progress-bar">
+            <div class="progress" style="width: 20%;"></div>
+        </div>
+        <form action="ticket_booking.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required><br><br>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact Us:</p>
+            <p>Email: contactus@aanavandi.com</p>
+            <p>Phone: 967992310</p>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 - Aanavandi.com | Designed by Aadarsh</p>
+        </div>
+    </footer>
+</body>
+</html>
