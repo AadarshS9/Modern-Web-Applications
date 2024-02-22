@@ -31,31 +31,77 @@
 
     <section class="form">
         <br>
-        <h2 style="text-align: center;">Customer Details</h2>
-        <p style="text-align: center;">Kindly fill in customer details</p><br>
-        <div class="progress-bar">
-            <div class="progress" style="width: 20%;"></div>
-        </div>
-        <form action="ticket_booking.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+        <form action="success.html" method="POST">
+            <h2 style="text-align: center;">Customer Details</h2>
+            <p style="text-align: center;">Kindly fill in customer details</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 30%;"></div>
+            </div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <p>Gender: </p>
+            <input type="radio" id="gender" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="gender" name="gender" value="idk">
+            <label for="male">Prefer not to say</label><br><br><br>
+
+
+            <h2 style="text-align: center;">Booking Details</h2>
+            <p style="text-align: center;">Kindly fill in booking details</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+            <label for="source">Source:</label>
+            <select name="source" id="source">
+                <option value="Kochi">Kochi</option>
+                <option value="Allepey">Allepey</option>
+                <option value="Munnar">Munnar</option>
+                <option value="Kovalam">Kovalam</option>
+            </select><br><br>
+            <label for="destination">Destination:</label>
+            <select name="destination" id="destination">
+                <option value="Kochi">Kochi</option>
+                <option value="Allepey">Allepey</option>
+                <option value="Munnar">Munnar</option>
+                <option value="Kovalam">Kovalam</option>
+            </select><br><br>
+            <label for="date">Date of Journey:</label>
+            <input type="date" id="doj" name="doj" required><br><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" max="10"><br><br><br>
+
+
+            <h2 style="text-align: center;">Contact Details</h2>
+            <p style="text-align: center;">Kindly fill in contact details</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required><br><br>
-            <label for="source">Source:</label>
-            <input type="text" id="source" name="source" required><br><br>
-            <label for="destination">Destination:</label>
-            <input type="text" id="destination" name="destination" required><br><br>
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required><br><br>
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" required><br><br>
-            <label for="seats">Number of Seats:</label>
-            <input type="number" id="seats" name="seats" required><br><br>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea>
+            
+            <br><br><br>
+            <h2 style="text-align: center;">Confirmation</h2>
+            <p style="text-align: center;">Kindly confirm</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+            </div>
+            <p>I have read the privacy statement and confirm to this booking! </p>
+            <input type="reset" value="Reset">
             <input type="submit" value="Submit">
+            <br><br>
         </form>
-        
     </section>
 
     <footer>
