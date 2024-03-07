@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Consolas';
+}
+
+main {
+    padding: 20px;
+}
+
+/* Header */
+nav {
+    display: flex; /* Display flex to align items in a row */
+    justify-content: space-between; /* Spreads items apart, pushing them to the ends */
+    align-items: center; /* Vertically center items */
+    background-color: orangered;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.logo img {
+    width: auto;
+    height: 50px;
+    margin-right: 20px; /* Add some spacing between image and text */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18.72px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact_us {
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.contact_us img {
+    width: auto;
+    height: 30px;
+    margin-right: 20px; /* Add some spacing between image and text */
+}
+
+/* Hero */
+.home {
+    background-image: url('./banner_image.gif');
+    background-size:auto;
+    background-position: center;
+    height: 800px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color on the hero image */
+    text-align: center; /* Center align text */
+    font-size: larger;
+}
+
+/*Content*/
+.featured-destinations, .testimonials {
+    margin-top: 20px;
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: justify;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+    background-color: orangered;
+    color: black;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.footer-content {
+    margin-bottom: 20px;
+    font-size: 18.72px;
+}
+
+/*TICKET Booking*/
+.progress-bar {
+    width: 100%;
+    background-color: black !important;
+    height: 20px; 
+    border-radius: 5px; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar .progress {
+    height: 100%;
+    background-color: orangered;
+    border-radius: 5px; 
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+.gender-options input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 5px; 
+}
+
+.gender-options label {
+    display: inline-block; 
+    font-size: 18px; 
+    vertical-align: middle;
+}
