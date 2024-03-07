@@ -20,6 +20,9 @@ Develop a website for Online Bus Ticket Booking having pages:
 - about_us.html
 - style.css
 
+# PRINT
+Code and output screenshots in Print.pdf
+
 # DEMO
 https://github.com/AadarshS9/Modern-Web-Applications/assets/94780937/55a0661a-2ed2-4a6c-b4af-ac839cb401fc
 
