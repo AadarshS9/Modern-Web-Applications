@@ -5,4 +5,4 @@ b) Write a Javascript program to calculate the grades of students and the averag
 
 # Solution
 - index.html
-- script.js
+- print.pdf
