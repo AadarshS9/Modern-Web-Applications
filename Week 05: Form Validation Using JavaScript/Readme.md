@@ -1,6 +1,7 @@
 # Question
-Write the client side scripts for Validating HTML Registration (Form Validation) Using JavaScript.
+Write the client-side scripts for Validating HTML Registration (Form Validation) Using JavaScript.
 
 # Solution
-- index.html
+- index.html [main]
+- styles.css
 - script.js
