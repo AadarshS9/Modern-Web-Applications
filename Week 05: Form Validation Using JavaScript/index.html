@@ -51,7 +51,6 @@
                 var email = document.getElementById("email").value;
                 var sex = document.querySelector('input[name="sex"]:checked');
                 var languages = document.getElementsByName("language");
-            
                 // Check if user ID is valid (length 5 to 12)
                 if (!userid || userid.length < 5 || userid.length > 12) {
                     alert("User ID must be between 5 and 12 characters long.");
@@ -65,6 +64,11 @@
                 // Check if name only contains alphabets
                 if (!name || !/^[a-zA-Z]+$/.test(name)) {
                     alert("Name must only contain alphabets.");
+                    return false;
+                }
+                // Check if country is selected
+                if (country === "") {
+                    alert("Please select a country.");
                     return false;
                 }
                 // Check if ZIP code is numeric only
@@ -97,7 +101,6 @@
                 // If all fields are valid, submit the form
                 alert("Submitted Successfully!");
                 return true;
-            
             }
         </script>
     </body>
