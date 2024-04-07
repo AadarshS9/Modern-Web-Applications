@@ -79,31 +79,37 @@
                     alert("User ID must be between 5 and 12 characters long.");
                     return false;
                 }
+            
                 // Check if password is valid (length 7 to 12)
                 if (!password || password.length < 7 || password.length > 12) {
                     alert("Password must be between 7 and 12 characters long.");
                     return false;
                 }
+            
                 // Check if name only contains alphabets
                 if (!name || !/^[a-zA-Z]+$/.test(name)) {
                     alert("Name must only contain alphabets.");
                     return false;
                 }
+            
                 // Check if ZIP code is numeric only
                 if (!zipcode || !/^\d+$/.test(zipcode)) {
                     alert("ZIP code must be numeric only.");
                     return false;
                 }
+            
                 // Check if email is valid
                 if (!email || !/\S+@\S+\.\S+/.test(email)) {
                     alert("Please enter a valid email address.");
                     return false;
                 }
+            
                 // Check if sex is selected
                 if (!sex) {
                     alert("Please select your gender.");
                     return false;
                 }
+                
                 // Check if language is selected
                 var languageSelected = false;
                 for (var i = 0; i < languages.length; i++) {
@@ -116,6 +122,7 @@
                     alert("Please select your language.");
                     return false;
                 }
+            
                 // If all fields are valid, submit the form
                 alert("Submitted Successfully!");
                 return true;
