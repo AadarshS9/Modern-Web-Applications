@@ -4,3 +4,7 @@
 
 # Solution
 - index.html
+- print.pdf
+- code.pdf
+- s1.png
+- s2.png
