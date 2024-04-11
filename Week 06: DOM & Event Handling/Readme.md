@@ -6,5 +6,6 @@
 - index.html
 - print.pdf
 - code.pdf
+- output.pdf
 - s1.png
 - s2.png
