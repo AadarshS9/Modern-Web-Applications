@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Color Change</title>
+<style>
+    /* CSS styles */
+    #changeColorBtn {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        background-color: green;
+        color: red;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    #changeColorBtn:hover {
+        background-color: red;
+        color: green;
+    }
+</style>
+</head>
+<body>
+
+<button id="changeColorBtn">Change Color</button>
+
+<script>
+    // JavaScript to change colors
+    const button = document.getElementById('changeColorBtn');
+
+    button.addEventListener('mouseover', function() {
+        button.style.color = 'red';
+        button.style.backgroundColor = 'green';
+    });
+
+    button.addEventListener('mouseout', function() {
+        button.style.color = 'green';
+        button.style.backgroundColor = 'red';
+    });
+</script>
+
+</body>
+</html>
