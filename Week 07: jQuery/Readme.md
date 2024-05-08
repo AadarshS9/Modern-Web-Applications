@@ -4,5 +4,6 @@
 
   # Solution
   - index.html
-  - output1.png
-  - output2.png
+  - output1_default.png
+  - output2_red.png
+  - output3_green.png
