@@ -6,4 +6,8 @@ Hint: Provides a simple interface where users can enter tasks in an input field,
 
 # Solution
 - index.html
-- indexoutput.png
+- indexoutput1_add.png
+- indexoutput2_edit.png
+- indexoutput3_edit.png
+- indexoutput4_delete.png
+
